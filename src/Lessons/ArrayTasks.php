@@ -13,6 +13,12 @@ class ArrayTasks
      */
     public function sumOfArray(array $integers): int
     {
-        return 0;
+        $sum = 0;
+
+        foreach ($integers as $integer) {
+            $sum += $integer;
+        }
+
+        return $sum;
     }
 }
