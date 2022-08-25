@@ -2,7 +2,6 @@
 
 namespace Lessons;
 
-
 class ArrayTasks
 {
     /**
