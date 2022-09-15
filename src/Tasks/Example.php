@@ -1,6 +1,6 @@
 <?php
 
-namespace Lessons;
+namespace App\Tasks;
 
 class Example
 {

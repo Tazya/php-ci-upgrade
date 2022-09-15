@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Unit\Lessons;
+namespace Tests\Unit\Tasks;
 
 use PHPUnit\Framework\TestCase;
-use Lessons\Example;
+use App\Tasks\Example;
 
 class ExampleTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 <?php
 
-use Lessons\Example;
+use App\Tasks\Example;
 
 $autoloadPath = __DIR__ . '/../vendor/autoload.php';
 

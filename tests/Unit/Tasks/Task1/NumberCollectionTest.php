@@ -1,18 +1,18 @@
 <?php
 
-namespace Tests\Unit\Lessons;
+namespace Tests\Unit\Tasks\Task1;
 
-use Lessons\ArrayTasks;
+use App\Tasks\Task1\NumberCollection;
 use PHPUnit\Framework\TestCase;
 
-class ArrayTasksTest extends TestCase
+class NumberCollectionTest extends TestCase
 {
     /**
      * @dataProvider sumOfArrayProvider
      */
     public function testSumOfArray($expected, $integers): void
     {
-        $result = (new ArrayTasks())->sumOfArray($integers);
+        $result = (new NumberCollection())->sumOfArray($integers);
 
         $this->assertSame($expected, $result);
     }
