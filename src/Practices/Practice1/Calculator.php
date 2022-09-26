@@ -16,14 +16,24 @@ class Calculator
 
     public function multiply($a, $b)
     {
-        // Напишите реализацию метода multiply, который умножает $a на $b
+        return $a * $b;
     }
 
     public function divide($a, $b)
     {
+        if ($b == 0) {
+            return null;
+        } else {
+            return $a / $b;
+        }
+
         // Напишите реализацию метода divide, который делит $a на $b. Если деление на $b невозможно, верните null
     }
 
+    public function pow($a, $b)
+    {
+        return $a ** $b;
+    }
     // Напишите новый метод pow. Он должен возводить $a в степень $b
 
     public function run($a, $b, $operator = '+')
@@ -33,6 +43,18 @@ class Calculator
                 return $this->add($a, $b);
             case '-':
                 return $this->sub($a, $b);
+            case '*':
+                return $this->multiply($a, $b);
+            case '/':
+                if (is_null($this->divide($a, $b))) {
+                    return "Divide by zero";
+                } else {
+                    return $this->divide($a, $b);
+                }
+            case '^':
+                return $this->pow($a, $b);
+            default:
+                return 'Unknown operator: ' . $operator;
         }
 
         // Допишите реализацию метода run. Метод принимает два операнда и оператор
