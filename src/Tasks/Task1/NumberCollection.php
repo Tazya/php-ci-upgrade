@@ -16,6 +16,10 @@ class NumberCollection
      */
     public function sumOfArray(array $integers): int
     {
-        return 0;
+        $summa = 0;
+        foreach ($integers as $number){
+            $summa += $number;
+        }
+        return $summa;
     }
 }
